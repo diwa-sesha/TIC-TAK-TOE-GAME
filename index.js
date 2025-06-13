@@ -19,28 +19,31 @@ function remove() {
 
 // PvP Button logic
 pvpButton.addEventListener("click", function () {
+  let divtag = document.createElement("div");
+  divtag.style.color = "red";
+  divtag.style.textAlign = "center";
+  divtag.style.grid = "none";
+  divtag.style.width = "100%";
+  divtag.style.margin = "0 auto";
+  mainDiv.appendChild(divtag);
   let headingText = document.createElement("h2");
-  headingText.innerText = "Select Your Symbol";
-  mainDiv.appendChild(headingText);
-  headingText.style.color="red";
-  headingText.style.grid="none";
-  headingText.style.textAlign="center";
-  remove();
-  
+  headingText.textContent = "Select Your Symbol";
+  divtag.appendChild(headingText);
 
+  remove();
 
   // Create X and O buttons
   let xButton = document.createElement("button");
   xButton.innerText = "X";
-  xButton.style.position="relative";
-    xButton.style.top="200px";
+  xButton.style.position = "relative";
+  xButton.style.top = "200px";
 
   mainDiv.appendChild(xButton);
 
   let oButton = document.createElement("button");
   oButton.innerText = "O";
-   oButton.style.position="relative";
-    oButton.style.top="200px";
+  oButton.style.position = "relative";
+  oButton.style.top = "200px";
   mainDiv.appendChild(oButton);
 
   xButton.addEventListener("click", function () {
