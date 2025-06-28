@@ -32,15 +32,14 @@
     position: absolute;
     top: 20%;
     left: 30%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "WDXL Lubrifont JP N", sans-serif; 
+    font-weight:400;
     font-size: x-large;
     font-style: italic;
     font-weight:900;
     z-index: 3;
     color:rgb(244, 17, 229);
-    font-family: "WDXL Lubrifont JP N", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+   
     text-shadow: 
     -1px -1px 0 rgb(0, 255, 102), 
      1px -1px 0 rgb(44, 250, 79),
@@ -167,7 +166,6 @@ span{
     justify-content: center;
     align-items: center;
     align-content: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 80px;
     position:absolute;
     top: 40%;
