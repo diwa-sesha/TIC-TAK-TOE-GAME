@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TIC-TAC-TOE</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <video  id="video" autoplay muted loop> 
-        <source src="./assets_02/TicTAkToe.mp4">
-    </video>
-    <div id="gal">
-      <p id="gal1"><span>GALATIC</span></p>
-      <h1 id="ticTAT">TIC TAC TOE</h1>
-    </div>
-    <div id="heading"><h2>Select Your Symbol</h2></div>
-    <div id="mainD">
-      <div id="divButton">
-        <button class="commonButton" id="pvpButton">Player vs Player</button>
-        <button class="commonButton" id="pvbButton">Player vs Bot</button>
-      </div>
-      <div id="headingDiv" >
-        <button  id="xButton">X</button>
-        <button  id="oButton">O</button>
-      </div>
-    </div>
-    <div id="rmButton">
-       <button class="commonBut" id="resetButton">RESET</button>
-       <button class="commonBut" id="mainmenuButton">MAIN MENU</button>
-    </div>
-    
-    <script src="./tic.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TIC-TAC-TOE</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <video id="video" autoplay muted loop>
+    <source src="./assets_02/TicTAkToe.mp4">
+  </video>
+
+  <div id="gal">
+    <p id="gal1"><span>GALATIC</span></p>
+    <h1 id="ticTAT">TIC TAC TOE</h1>
+  </div>
+
+  <div id="heading"><h1>SELECT YOUR SYMBOL</h1></div>
+
+  <!-- Menu Buttons -->
+  <div id="divButton">
+    <button class="commonButton" id="pvpButton">Player vs Player</button>
+    <button class="commonButton" id="pvbButton">Player vs Bot</button>
+  </div>
+
+  <!-- Choose Symbol for PvP -->
+  <div id="headingDiv">
+    <button id="xButton">X</button>
+    <button id="oButton">O</button>
+  </div>
+
+  <!-- Game Grid Container -->
+  <div id="mainD"></div>
+
+  <!-- Reset & Return Buttons -->
+  <div id="rmButton">
+    <button class="commonBut" id="resetButton">RESET</button>
+    <button class="commonBut" id="mainmenuButton">MAIN MENU</button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
 </html>
